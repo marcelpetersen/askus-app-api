@@ -1,0 +1,12 @@
+logs/*
+!.gitkeep
+node_modules/
+
+.env
+npm-debug.log
+
+tmp
+.DS_Store
+.idea
+
+app/assets/.sass-cache/

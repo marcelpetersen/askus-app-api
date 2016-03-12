@@ -1,0 +1,18 @@
+{
+  "name": "whichone-api-app",
+  "private": true,
+  "version": "0.0.1",
+  "description": "exercise",
+  "repository": "todo",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.2.20",
+    "body-parser": "^1.14.1",
+    "cookie-parser": "^1.4.0",
+    "dotenv": "^1.2.0",
+    "express": "^4.13.3",
+    "nodemon": "^1.8.1"
+  }
+}
