@@ -1,6 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
+var Firebase = require("firebase");
 
 module.exports = function(app) {
 
