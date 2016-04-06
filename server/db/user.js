@@ -57,6 +57,8 @@ userMethods.delete = function(req, res) {
                     res.sendStatus(200);
                   }
                 })
+              } else {
+                res.status(400).send({error: "error while deleting message"});
               }
             } else {
               userRef.child(userKey).remove(function(error) {
