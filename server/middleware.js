@@ -18,5 +18,4 @@ module.exports = function(app) {
   app.use(cookieParser());
   app.use('/', require('./router'));
   //app.use(express.static(__dirname + '/../client/app'));
-
 };
