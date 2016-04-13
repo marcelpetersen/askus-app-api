@@ -24,12 +24,11 @@ aws_s3.sign = function(req, res, next) {
         ["content-length-range", 0, 524288000]
     ]};
  
+    // Create signature
     policyBase64 = new Buffer(JSON.stringify(policy), 'utf8').toString('base64');
-
     signature = crypto.createHmac('sha1', secret).update(policyBase64).digest('base64');
 
-    console.log("Informations sent");
-
+    // console.log("Informations sent");
     res.json({bucket: bucket, awsKey: awsKey, policy: policyBase64, signature: signature});
 }
 
